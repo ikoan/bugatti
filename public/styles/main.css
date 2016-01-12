@@ -260,3 +260,7 @@ html, body {
   border: 2px solid #bf209a;
   color: #FFF;
 }
+
+a {
+  text-decoration: none !important;
+}
