@@ -3,20 +3,19 @@
 
     angular
         .module('app')
-        .controller('loginController', loginController);
+        .controller('signupController', signupController);
 
-    function loginController ($state, Auth) { 
+    function signupController ($state, Auth) { 
       var vm = this;
-      vm.login = function () {
+      vm.signup = function () {
         var user = {
           username: vm.username,
           password: vm.password
         }
-        Auth.signin(user).then(function(data){
-          console.log(data);
+        Auth.signup(user).then(function(data){
           $state.go("dashboard.main")
         });
-        // 
+        //
 
       }
 
