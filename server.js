@@ -144,7 +144,7 @@ app.post('/login', function(req, res){
   };
   //mongoose .findOne()
   User.findOne(user_login, function(err, user) {
-    if (err) throw err;
+    if (err) res.redirect('/signup');
     //ascyhronous bcrypt compare 
     bcrypt.compare(req.body.password, user.password, function(err, match){
       if (err) throw err;
@@ -169,7 +169,7 @@ app.post('/login', function(req, res){
 
 //for when front end posts to api/shows - this is when the user selects a show to follow
 app.post('/api/shows', function(req, response){
-  if(req.session.user) {
+  // if(req.session.user) {
     // User.findOne({username: 'kristen'}, function(err){
     //   if(err) throw err;
       request('http://www.omdbapi.com/?i='+req.body.imdbID, function(error, res, body){
@@ -185,9 +185,9 @@ app.post('/api/shows', function(req, response){
 
       });
     // });
-  } else {
-    res.redirect('/login');
-  }
+  // } else {
+  //   res.redirect('/login');
+  // }
 });
 
 
