@@ -16,9 +16,23 @@
           return res;
         })
       } 
+
+    function signup (user) {
+      return $http.post('/signup', user)
+        .then(function (res) {
+          return res;
+        }, function (err) {
+          console.log(err);
+        })
+    }
+
+
       return {
-        login: signin
+        signin: signin,
+        signup: signup
       }
     }
+
+
 
   })();

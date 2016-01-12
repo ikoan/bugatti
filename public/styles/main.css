@@ -84,8 +84,8 @@ html, body {
 }
 
 .dashboard_main .result-container {
-  height: 200px;
-  /*border: 1px solid #ccc;*/
+  height: auto;
+  margin-bottom: 20px;
 }
 
 .dashboard_main img {
@@ -177,6 +177,11 @@ html, body {
   right: 15px;
   color: #ccc;
   font-size: 10px
+}
+
+.border-bottom {
+  border-bottom: 1px solid #eee;
+  padding: 10px 0;
 }
 
 
