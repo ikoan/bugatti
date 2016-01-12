@@ -12,10 +12,11 @@
           username: vm.username,
           password: vm.password
         }
-        Auth.login(user).then(function(data){
+        Auth.signin(user).then(function(data){
           console.log(data);
+          $state.go("dashboard.main")
         });
-        // $state.go("dashboard.child")
+        // 
 
       }
 
