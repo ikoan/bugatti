@@ -13,9 +13,9 @@
           password: vm.password
         }
         Auth.signup(user).then(function(data){
-          console.log(data);
+          $state.go("dashboard.main")
         });
-        // $state.go("dashboard.child")
+        //
 
       }
 

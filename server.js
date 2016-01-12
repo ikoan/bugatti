@@ -108,7 +108,8 @@ app.post('/signup', function(req, res){
 
   User.findOne({username: username}).then(function(user){
     if(user){
-       res.sendStatus(403);
+       //res.sendStatus(403);
+       res.send("user already exits")
     } else {
       var userData = {
         username :  req.body.username,
@@ -128,7 +129,8 @@ app.post('/signup', function(req, res){
             throw err;
           }
           createSession(req, res, userData);
-          res.redirect('/');
+          //res.redirect('/');
+          res.send("completed")
         });
       });
     }
@@ -155,7 +157,7 @@ app.post('/login', function(req, res){
       //log request
       console.log(req);
       //redirect to main page
-      res.redirect('/');
+      res.send('success');
     } else {
       res.send('CANNOT LOG IN!');
     }

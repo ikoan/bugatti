@@ -20,7 +20,7 @@
     function signup (user) {
       return $http.post('/signup', user)
         .then(function (res) {
-          return res;
+          console.log(res);
         }, function (err) {
           console.log(err);
         })
