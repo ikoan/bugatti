@@ -20,11 +20,13 @@
           controller: "loginController",
           controllerAs: 'loginVm'
         })
-        .state('search', {
-          url: '/search',
-          templateUrl: "../views/searchbar.html",
-          controller:"searchbarController"
+        .state('signup', {
+          url: '/signup',
+          templateUrl: "../views/signup.html",
+          controller:"signupController",
+          controllerAs: 'signupVm'
         })
+
         .state('calendar', {
           url:'/calendar',
           templateUrl:'../views/calendar.html',

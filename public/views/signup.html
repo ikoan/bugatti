@@ -1,0 +1,31 @@
+<section class="login"> 
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-offset-4 col-md-4 login-container">
+        <header>Sign Up</header>
+        <form ng-submit="signupVm.signup()">
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input 
+              type="email" 
+              class="form-control" 
+              id="exampleInputEmail1" 
+              placeholder="Email"
+              ng-model="signupVm.username">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input 
+              type="password" 
+              class="form-control" 
+              id="exampleInputPassword1" 
+              placeholder="Password"
+              ng-model="signupVm.password">
+          </div>
+
+          <button type="submit" class="btn btn-default">Sign Up</button>
+        </form>
+      </div>
+    </div>
+  <div>
+</section>
