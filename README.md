@@ -1,6 +1,6 @@
 # Project Name
 
-> Love watching TV and don't want to miss out on your favorite show? Try __app name___! Save your favorite show's episodes and easily get up-to-date with the click of a button!
+> Love watching TV and don't want to miss out on your favorite show? Try TIKA Show Tracker! Save your favorite show's episodes and easily get up-to-date with the click of a button!
 
 
 ## Team
